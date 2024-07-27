@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Tasks.Core", "src\
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BD9C7545-9307-4893-82BE-55B825AA2AED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thunders.Tasks.Tests", "src\Thunders.Tasks.Tests\Thunders.Tasks.Tests.csproj", "{34FFB2E2-C361-4F79-B82C-7A08129928DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BD9C7545-9307-4893-82BE-55B825AA2AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD9C7545-9307-4893-82BE-55B825AA2AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD9C7545-9307-4893-82BE-55B825AA2AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FFB2E2-C361-4F79-B82C-7A08129928DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FFB2E2-C361-4F79-B82C-7A08129928DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FFB2E2-C361-4F79-B82C-7A08129928DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FFB2E2-C361-4F79-B82C-7A08129928DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
