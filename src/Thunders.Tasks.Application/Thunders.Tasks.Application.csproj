@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\" />
+    <ProjectReference Include="..\Thunders.Tasks.Core\Thunders.Tasks.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Thunders.Tasks.Domain\Thunders.Tasks.Domain.csproj" />
+    <PackageReference Include="MediatR" Version="12.4.0" />
   </ItemGroup>
 
 </Project>

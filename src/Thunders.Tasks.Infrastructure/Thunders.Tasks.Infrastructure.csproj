@@ -7,12 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\Configurations\" />
-    <Folder Include="Persistence\Repositories\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <ProjectReference Include="..\Thunders.Tasks.Core\Thunders.Tasks.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
   </ItemGroup>
 
 </Project>

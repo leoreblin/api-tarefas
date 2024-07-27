@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  tasklistapi:
+    image: tasklistapi
+    build:
+      context: .
+      dockerfile: src/Thunders.Tasks.WebApi/Dockerfile
+    container_name: thunders-api-container
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Initial Catalog=thunders-db;User Id=SA;Password=P@ssword;TrustServerCertificate=true;
+  
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server
+    container_name: thunders-db-sqlserver
+    environment:
+      SA_PASSWORD: "P@ssword"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - c:\data\sqlserver:/var/opt/mssql/data

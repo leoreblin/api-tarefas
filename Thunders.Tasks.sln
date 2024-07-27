@@ -5,11 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Tasks.WebApi", "src\Thunders.Tasks.WebApi\Thunders.Tasks.WebApi.csproj", "{DEE53926-105A-4079-9EC0-FC186F2482B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thunders.Tasks.Application", "src\Thunders.Tasks.Application\Thunders.Tasks.Application.csproj", "{17B935B7-6A60-49E9-B005-A56CDBC20ADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Tasks.Application", "src\Thunders.Tasks.Application\Thunders.Tasks.Application.csproj", "{17B935B7-6A60-49E9-B005-A56CDBC20ADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thunders.Tasks.Infrastructure", "src\Thunders.Tasks.Infrastructure\Thunders.Tasks.Infrastructure.csproj", "{B34BA1CD-86E0-4B05-B17A-F01C39A4F767}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Tasks.Infrastructure", "src\Thunders.Tasks.Infrastructure\Thunders.Tasks.Infrastructure.csproj", "{B34BA1CD-86E0-4B05-B17A-F01C39A4F767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thunders.Tasks.Domain", "src\Thunders.Tasks.Domain\Thunders.Tasks.Domain.csproj", "{DFA7372D-5596-4962-A0FF-1FE42DDBEECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thunders.Tasks.Core", "src\Thunders.Tasks.Core\Thunders.Tasks.Core.csproj", "{DFA7372D-5596-4962-A0FF-1FE42DDBEECA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BD9C7545-9307-4893-82BE-55B825AA2AED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DFA7372D-5596-4962-A0FF-1FE42DDBEECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFA7372D-5596-4962-A0FF-1FE42DDBEECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFA7372D-5596-4962-A0FF-1FE42DDBEECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD9C7545-9307-4893-82BE-55B825AA2AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9C7545-9307-4893-82BE-55B825AA2AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD9C7545-9307-4893-82BE-55B825AA2AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD9C7545-9307-4893-82BE-55B825AA2AED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
