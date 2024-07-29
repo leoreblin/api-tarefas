@@ -20,7 +20,7 @@
             DataCriacao = dataCriacao;
         }
 
-        public static Tarefa Criar(string nome, string? descricao)
+        public static Tarefa Criar(string nome, string? descricao = "")
         {
             var dataCriacao = DateTime.Now;
             return new Tarefa(nome, descricao, estaCompleta: false, dataCriacao);
@@ -28,6 +28,11 @@
 
         public void Completar()
         {
+            if (EstaCompleta)
+            {
+                return;
+            }
+
             EstaCompleta = true;
             DataCompletou = DateTime.Now;
         }

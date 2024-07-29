@@ -19,6 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Thunders.Tasks.Application\Thunders.Tasks.Application.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Core\Thunders.Tasks.Core.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Infrastructure\Thunders.Tasks.Infrastructure.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.WebApi\Thunders.Tasks.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
