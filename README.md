@@ -17,6 +17,7 @@ Esta é uma API de gerenciamento de tarefas desenvolvida utilizando ASP.NET Core
 
 O projeto foi organizado da seguinte forma:
 
+```
 Thunders.Tasks
 │── src
 │ ├── Thunders.Tasks.WebApi # Projeto principal da API
@@ -26,6 +27,7 @@ Thunders.Tasks
 │ ├── Thunders.Tasks.Tests # Testes unitários
 ├── docker-compose.yml # Arquivo de configuração do Docker Compose
 ├── README.md # Documentação do projeto
+```
 
 ## Pré-requisitos
 
