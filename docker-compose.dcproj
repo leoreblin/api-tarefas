@@ -4,7 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>bd9c7545-9307-4893-82be-55b825aa2aed</ProjectGuid>
+    <ProjectGuid>40248e6d-40c9-45da-92b7-48d4cbb8f9c1</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>thunders.tasks.webapi</DockerServiceName>

@@ -1,6 +1,17 @@
 version: '3.4'
 
 services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server
+    container_name: thunders-db-sqlserver
+    environment:
+      SA_PASSWORD: "P@ssword"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - c:\data\sqlserver:/var/opt/mssql/data
+      
   tasklistapi:
     image: tasklistapi
     build:
@@ -14,13 +25,4 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Server=sqlserver;Initial Catalog=thunders-db;User Id=SA;Password=P@ssword;TrustServerCertificate=true;
   
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server
-    container_name: thunders-db-sqlserver
-    environment:
-      SA_PASSWORD: "P@ssword"
-      ACCEPT_EULA: "Y"
-    ports:
-      - "1433:1433"
-    volumes:
-      - c:\data\sqlserver:/var/opt/mssql/data
+  

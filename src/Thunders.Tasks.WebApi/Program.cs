@@ -8,6 +8,7 @@ using Thunders.Tasks.WebApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
@@ -31,6 +32,13 @@ builder.Services.AddTransient<GlobalExceptionHandlingMiddleware>();
 var app = builder.Build();
 
 app.UseHttpsRedirection();
+
+app.UseCors(policy =>
+{
+    policy.AllowAnyOrigin()
+          .AllowAnyHeader()
+          .AllowAnyMethod();
+});
 
 if (app.Environment.IsDevelopment())
 {
