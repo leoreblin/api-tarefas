@@ -179,7 +179,7 @@ namespace Thunders.Tasks.Tests.Controllers
                 .ReturnsAsync(result);
 
             // Act
-            IActionResult actionResult = await _tarefasController.Completar(command, cancellationToken);
+            IActionResult actionResult = await _tarefasController.Completar(command.Id, cancellationToken);
 
             // Assert
             actionResult.Should().BeEquivalentTo(new BadRequestObjectResult(result.Error)
@@ -201,7 +201,7 @@ namespace Thunders.Tasks.Tests.Controllers
                 .ReturnsAsync(result);
 
             // Act
-            IActionResult actionResult = await _tarefasController.Completar(command, cancellationToken);
+            IActionResult actionResult = await _tarefasController.Completar(command.Id, cancellationToken);
 
             // Assert
             actionResult.Should().BeEquivalentTo(new OkResult());

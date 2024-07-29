@@ -62,11 +62,12 @@ namespace Thunders.Tasks.WebApi.Controllers
             return Ok(tarefaCriadaResult.Value);
         }
 
-        [HttpPut]
+        [HttpPost("{id:guid}/completar")]
         public async Task<IActionResult> Completar(
-            [FromBody] CompletarTarefaCommand command,
+            [FromRoute] Guid id,
             CancellationToken cancellationToken)
         {
+            var command = new CompletarTarefaCommand(id);
             var result = await _sender.Send(command, cancellationToken);
 
             if (result.Failed)
