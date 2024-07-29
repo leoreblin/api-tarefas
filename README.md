@@ -39,9 +39,9 @@ Thunders.Tasks
 
 ### Configuração do Docker
 
-1. **Criação do volume para o banco de dados***:
+1. **Criação do volume para o banco de dados**:
 
-	O volume garante a persistência dos dados do SQL Server. Neste projeto, por default, a pasta encontra-se em "C:\data\sqlserver" (vide arquivo docker-compose.yml).
+	O volume garante a persistência dos dados do SQL Server. Neste projeto, por default, a pasta encontra-se em `C:\data\sqlserver` (vide arquivo `docker-compose.yml`). Portanto, deve-se criar uma pasta obedecendo a estrura existente ou utilizar outro diretório de sua preferência e apontá-lo no arquivo `docker-compose.yml`.
 
 2. Arquivo `docker-compose.yml`:
 	
